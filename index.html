@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PASSBUS</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"> </script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -15,21 +15,49 @@
         <h1 id="nome2">Compre sua passagem de ônibus:</h1>
         <form>
             <div id="q">
-                <div><input class="barra" id="barra1" type="text" placeholder="Local de origem"></div>
-                <div><input class="barra" id="barra2" type="text" placeholder="Local de destino"></div>
-                <div><input class="barra" id="barra3" type="number" placeholder="Quantidade de passagens"></div>
-                <div><input class="barra" id="barra4" type="text" placeholder="Classe"></div>
-                <div><input type="checkbox" name="check" id="check">
+                <div>
+                    <select class="barra" id="barra1">
+                        <option value="">Selecione o local de origem</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="barra" id="barra2">
+                        <option value="">Selecione o local de destino</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="barra" id="barra3">
+                        <option value="">Selecione a quantidade de passagens</option>
+                        <!-- Quantidades de 1 a 10 como exemplo -->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="barra" id="barra4">
+                        <option value="">Selecione a classe</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" name="check" id="check">
                     <label id="nome3" for="check">Passagem de ida e volta.</label>
                 </div>
-                <div><input id="butao" name="butao" type="button" value="Pesquisar" onclick="alert('Sua busca foi realizada')">
+                <div>
+                    <input id="butao" name="butao" type="button" value="Pesquisar">
+                </div>
+                <div id="linke"><a href="#">Ainda não sabe para onde ir? encontre aqui</a></div>
+            </div>
+            
         </form>
     </div>
-    <div id="linke"><a href="#">Ainda não sabe para onde ir? encontre aqui</a></div>
-    </div>
-    </div>
-
 </body>
 
-
-</html
+</html>

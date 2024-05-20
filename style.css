@@ -6,6 +6,7 @@
     backdrop-filter: blur(20px);
     border: solid 2px rgba(255, 255, 255, .2);
     border-radius: 30px;
+
 }
 
 #nome {
@@ -60,6 +61,9 @@ body {
     min-width: 20px;
     min-height: 20px;
     margin-right: 10px;
+}
+#chech:active{
+    background-color: #69A297;
 }
 
 #nome3 {

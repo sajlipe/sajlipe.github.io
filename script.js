@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const destinoSelect = document.getElementById('barra2');
     const classeSelect = document.getElementById('barra4');
 
-    // Popula os selects de origem e destino
+    
     db.cidade.forEach(cidade => {
         const optionOrigem = document.createElement('option');
         optionOrigem.value = cidade.nome.toLowerCase();
@@ -93,15 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
         destinoSelect.appendChild(optionDestino);
     });
 
-    // Atualiza as classes quando o destino é selecionado
+    
     destinoSelect.addEventListener('change', () => {
         const destino = destinoSelect.value;
         const cidadeDestino = db.cidade.find(c => c.nome.toLowerCase() === destino);
 
-        // Limpa as opções atuais
+        
         classeSelect.innerHTML = '<option value="">Selecione a classe</option>';
 
-        // Adiciona as novas opções de classe
+        
         if (cidadeDestino && cidadeDestino.classe) {
             cidadeDestino.classe.forEach(classe => {
                 const optionClasse = document.createElement('option');
@@ -163,6 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('#linke a').addEventListener('click', (event) => {
         event.preventDefault();
-        window.location.href = 'cidades.html';
+        window.location.href = 'https://pt.wikipedia.org/wiki/Lista_de_municípios_do_Brasil';
     });
 });

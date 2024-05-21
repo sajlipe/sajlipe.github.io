@@ -61,13 +61,13 @@ const db = {
             passagem: ["ida", "volta"]
         },
         {
-            nome: "Capela do alto alegre",
+            nome: "Capela do Alto Alegre",
             quantidade: 5,
             classe: ["econômica", "executiva"],
             passagem: ["ida", "volta"]
         },
         {
-            nome: "santo Antônio de jesus",
+            nome: "Santo Antônio de Jesus",
             quantidade: 30,
             classe: ["executiva"],
             passagem: ["ida", "volta"]
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (validarNoBancoDeDados(origem, destino, quantidade, classe, idaEVolta)) {
-            alert('Sua busca foi realizada com sucesso!');
+            alert('Sua busca foi realizada com sucesso!, redirencionando!');
         }
     });
 
